@@ -6,11 +6,12 @@
 
     <groupId>com.loohp</groupId>
     <artifactId>ViaLimbo</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <build>
@@ -95,13 +96,13 @@
         <dependency>
             <groupId>com.loohp</groupId>
             <artifactId>Limbo</artifactId>
-            <version>0.7.12-ALPHA</version>
+            <version>0.7.13-ALPHA</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.raphimc</groupId>
             <artifactId>ViaProxy</artifactId>
-            <version>3.3.6</version>
+            <version>3.4.1</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

@@ -59,10 +59,11 @@ public class ViaLimbo extends LimboPlugin implements Listener {
             ipField.setAccessible(true);
             ipField.set(serverProperties, "127.0.0.1");
 
+            String minecraftVersion = (String) Limbo.class.getField("SERVER_IMPLEMENTATION_VERSION").get(Limbo.getInstance());
+
             Limbo.getInstance().getEventsManager().registerEvents(this, new ViaLimboListener());
 
             Limbo.getInstance().getScheduler().runTask(this, () -> {
-                String minecraftVersion = Limbo.getInstance().SERVER_IMPLEMENTATION_VERSION;
                 int limboPort = Limbo.getInstance().getServerConnection().getServerSocket().getLocalPort();
                 startViaProxy(ip, port, minecraftVersion, limboPort, bungeecord);
             });
