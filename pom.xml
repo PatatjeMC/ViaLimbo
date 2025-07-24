@@ -119,12 +119,11 @@
             <version>0.7.14-ALPHA</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>net.raphimc</groupId>
-            <artifactId>ViaProxy</artifactId>
-            <version>3.4.3</version>
-            <scope>compile</scope>
-        </dependency>
+      	<dependency>
+      	    <groupId>com.github.PatatjeMC</groupId>
+      	    <artifactId>ViaProxy</artifactId>
+      	    <version>4c84a42ff2</version>
+      	</dependency>
     </dependencies>
 
 </project>
